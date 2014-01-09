@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Ds_Harian" targetNamespace="http://tempuri.org/Ds_Harian.xsd" xmlns:mstns="http://tempuri.org/Ds_Harian.xsd" xmlns="http://tempuri.org/Ds_Harian.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Ds_Harian" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Ds_Harian" msprop:Generator_DataSetName="Ds_Harian" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Ds_Harian" msprop:Generator_UserTableName="Ds_Harian" msprop:Generator_RowDeletedName="Ds_HarianRowDeleted" msprop:Generator_RowChangedName="Ds_HarianRowChanged" msprop:Generator_RowClassName="Ds_HarianRow" msprop:Generator_RowChangingName="Ds_HarianRowChanging" msprop:Generator_RowEvArgName="Ds_HarianRowChangeEvent" msprop:Generator_RowEvHandlerName="Ds_HarianRowChangeEventHandler" msprop:Generator_TableClassName="Ds_HarianDataTable" msprop:Generator_TableVarName="tableDs_Harian" msprop:Generator_RowDeletingName="Ds_HarianRowDeleting" msprop:Generator_TablePropName="_Ds_Harian">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Tgl_Mask" msprop:Generator_UserColumnName="Tgl_Mask" msprop:Generator_ColumnVarNameInTable="columnTgl_Mask" msprop:Generator_ColumnPropNameInRow="Tgl_Mask" msprop:Generator_ColumnPropNameInTable="Tgl_MaskColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Jam_Masuk" msprop:Generator_UserColumnName="Jam_Masuk" msprop:Generator_ColumnVarNameInTable="columnJam_Masuk" msprop:Generator_ColumnPropNameInRow="Jam_Masuk" msprop:Generator_ColumnPropNameInTable="Jam_MasukColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Kd_Parkir" msprop:Generator_UserColumnName="Kd_Parkir" msprop:Generator_ColumnVarNameInTable="columnKd_Parkir" msprop:Generator_ColumnPropNameInRow="Kd_Parkir" msprop:Generator_ColumnPropNameInTable="Kd_ParkirColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:Ds_Harian" />
+      <xs:field xpath="mstns:Kd_Parkir" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Parkir
+</name>
+</assembly>
+<members>
+<member name="T:Parkir.Ds_Karcis.Ds_KarcisDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Parkir.Ds_Karcis.Ds_KarcisRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Parkir.Ds_Karcis.Ds_KarcisRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Parkir.Ds_Karcis">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Parkir.Ds_Masuk.Ds_MasukDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Parkir.Ds_Masuk.Ds_MasukRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Parkir.Ds_Masuk.Ds_MasukRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Parkir.Ds_Masuk">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="P:Parkir.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Parkir.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Parkir.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:Parkir.Ds_Keluar.Ds_KeluarDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Parkir.Ds_Keluar.Ds_KeluarRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Parkir.Ds_Keluar.Ds_KeluarRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Parkir.Ds_Keluar">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Parkir.Ds_Harian.Ds_HarianDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Parkir.Ds_Harian.Ds_HarianRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Parkir.Ds_Harian.Ds_HarianRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Parkir.Ds_Harian">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+</members>
+</doc>

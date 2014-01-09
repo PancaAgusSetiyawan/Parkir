@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Ds_Keluar" targetNamespace="http://tempuri.org/Ds_Keluar.xsd" xmlns:mstns="http://tempuri.org/Ds_Keluar.xsd" xmlns="http://tempuri.org/Ds_Keluar.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Ds_Keluar" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Ds_Keluar" msprop:Generator_DataSetName="Ds_Keluar" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Ds_Keluar" msprop:Generator_UserTableName="Ds_Keluar" msprop:Generator_RowDeletedName="Ds_KeluarRowDeleted" msprop:Generator_RowChangedName="Ds_KeluarRowChanged" msprop:Generator_RowClassName="Ds_KeluarRow" msprop:Generator_RowChangingName="Ds_KeluarRowChanging" msprop:Generator_RowEvArgName="Ds_KeluarRowChangeEvent" msprop:Generator_RowEvHandlerName="Ds_KeluarRowChangeEventHandler" msprop:Generator_TableClassName="Ds_KeluarDataTable" msprop:Generator_TableVarName="tableDs_Keluar" msprop:Generator_RowDeletingName="Ds_KeluarRowDeleting" msprop:Generator_TablePropName="_Ds_Keluar">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Kd_Parkir" msprop:Generator_UserColumnName="Kd_Parkir" msprop:Generator_ColumnPropNameInRow="Kd_Parkir" msprop:Generator_ColumnVarNameInTable="columnKd_Parkir" msprop:Generator_ColumnPropNameInTable="Kd_ParkirColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="plat_no" msprop:Generator_UserColumnName="plat_no" msprop:Generator_ColumnPropNameInRow="plat_no" msprop:Generator_ColumnVarNameInTable="columnplat_no" msprop:Generator_ColumnPropNameInTable="plat_noColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Tgl_Keluar" msprop:Generator_UserColumnName="Tgl_Keluar" msprop:Generator_ColumnPropNameInRow="Tgl_Keluar" msprop:Generator_ColumnVarNameInTable="columnTgl_Keluar" msprop:Generator_ColumnPropNameInTable="Tgl_KeluarColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Jam_Keluar" msprop:Generator_UserColumnName="Jam_Keluar" msprop:Generator_ColumnPropNameInRow="Jam_Keluar" msprop:Generator_ColumnVarNameInTable="columnJam_Keluar" msprop:Generator_ColumnPropNameInTable="Jam_KeluarColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Jns_Kend" msprop:Generator_UserColumnName="Jns_Kend" msprop:Generator_ColumnPropNameInRow="Jns_Kend" msprop:Generator_ColumnVarNameInTable="columnJns_Kend" msprop:Generator_ColumnPropNameInTable="Jns_KendColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Biaya" msprop:Generator_UserColumnName="Biaya" msprop:Generator_ColumnVarNameInTable="columnBiaya" msprop:Generator_ColumnPropNameInRow="Biaya" msprop:Generator_ColumnPropNameInTable="BiayaColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

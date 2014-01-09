@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DFE08DD0-06C7-4DE4-A228-DE47C232150B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Parkir.My.MyApplication</StartupObject>
+    <RootNamespace>Parkir</RootNamespace>
+    <AssemblyName>Parkir</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SignAssembly>false</SignAssembly>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Parkir.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Parkir.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmLapKarcis.Designer.vb">
+      <DependentUpon>FrmLapKarcis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLapKarcis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_About.designer.vb">
+      <DependentUpon>Frm_About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_MENU.Designer.vb">
+      <DependentUpon>Frm_MENU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_MENU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RptKarcis.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptKarcis.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ds_Karcis.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Karcis.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLapMasuk.Designer.vb">
+      <DependentUpon>FrmLapMasuk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLapMasuk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rpt_Masuk.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_Masuk.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ds_Masuk.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Masuk.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Rpt_Keluar.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_Keluar.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ds_Harian.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Harian.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ds_Keluar.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Keluar.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ds_Keluar.vb">
+      <DependentUpon>Ds_Keluar.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLapKeluar.Designer.vb">
+      <DependentUpon>FrmLapKeluar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLapKeluar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Keluar.Designer.vb">
+      <DependentUpon>Frm_Keluar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Keluar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_LogIn.Designer.vb">
+      <DependentUpon>Frm_LogIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_LogIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_LogInUser.Designer.vb">
+      <DependentUpon>Frm_LogInUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_LogInUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Masuk.Designer.vb">
+      <DependentUpon>Frm_Masuk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Masuk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Review.Designer.vb">
+      <DependentUpon>Frm_Review.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Review.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Splash.Designer.vb">
+      <DependentUpon>Frm_Splash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Splash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Tarif.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Tarif.Designer.vb">
+      <DependentUpon>Frm_Tarif.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_User.Designer.vb">
+      <DependentUpon>Frm_User.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_User.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mdl_HakAksess.vb" />
+    <Compile Include="Mdl_koneksi.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmLapKarcis.resx">
+      <DependentUpon>FrmLapKarcis.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_About.resx">
+      <DependentUpon>Frm_About.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_MENU.resx">
+      <DependentUpon>Frm_MENU.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptKarcis.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptKarcis.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLapMasuk.resx">
+      <DependentUpon>FrmLapMasuk.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_Masuk.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_Masuk.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_Keluar.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_Keluar.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLapKeluar.resx">
+      <DependentUpon>FrmLapKeluar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Keluar.resx">
+      <DependentUpon>Frm_Keluar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_LogIn.resx">
+      <DependentUpon>Frm_LogIn.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_LogInUser.resx">
+      <DependentUpon>Frm_LogInUser.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Masuk.resx">
+      <DependentUpon>Frm_Masuk.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Review.resx">
+      <DependentUpon>Frm_Review.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Splash.resx">
+      <DependentUpon>Frm_Splash.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Tarif.resx">
+      <DependentUpon>Frm_Tarif.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_User.resx">
+      <DependentUpon>Frm_User.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ds_Harian.xsc">
+      <DependentUpon>Ds_Harian.xsd</DependentUpon>
+    </None>
+    <None Include="Ds_Harian.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Harian.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Ds_Harian.xss">
+      <DependentUpon>Ds_Harian.xsd</DependentUpon>
+    </None>
+    <None Include="Ds_Karcis.xsc">
+      <DependentUpon>Ds_Karcis.xsd</DependentUpon>
+    </None>
+    <None Include="Ds_Karcis.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Karcis.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Ds_Karcis.xss">
+      <DependentUpon>Ds_Karcis.xsd</DependentUpon>
+    </None>
+    <None Include="Ds_Keluar.xsc">
+      <DependentUpon>Ds_Keluar.xsd</DependentUpon>
+    </None>
+    <None Include="Ds_Keluar.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Keluar.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Ds_Keluar.xss">
+      <DependentUpon>Ds_Keluar.xsd</DependentUpon>
+    </None>
+    <None Include="Ds_Masuk.xsc">
+      <DependentUpon>Ds_Masuk.xsd</DependentUpon>
+    </None>
+    <None Include="Ds_Masuk.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Masuk.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Ds_Masuk.xss">
+      <DependentUpon>Ds_Masuk.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\PANAH.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO PARKIR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DSC_0273.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
